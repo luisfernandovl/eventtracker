@@ -1,3 +1,8 @@
+<a href="https://www.alura.com.br" target="_blank"> Alura Cursos Online</a> - 
+Desenvolvi esse programa seguindo os mesmos passos do instrutor do curso:
+# <a href="https://www.alura.com.br/curso-online-react-gerenciando-estado-recoil" target="_blank">React: gerenciando estado com Recoil.</a>
+
+<br>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
