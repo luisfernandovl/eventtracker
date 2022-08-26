@@ -1,7 +1,7 @@
 .App {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   overflow: hidden;
   display: grid; 
@@ -11,6 +11,15 @@
   padding: 20px;
   row-gap: 3rem;
   column-gap: 3rem;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: 
+      "."
+      "."
+    ; 
+  }
 
   ::-webkit-scrollbar
   {
@@ -25,8 +34,4 @@
     background-color: #000000;
     border-radius: 1rem;
   }
-}
-
-.Coluna {
-  overflow-y: auto;
 }

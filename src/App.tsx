@@ -18,9 +18,7 @@ function App() {
             <ListaDeEventos />
           </Card>
         </div>
-        <div className={style.Coluna}>
-          <Calendario />
-        </div>
+        <Calendario />
       </div>
     </RecoilRoot>
   );
