@@ -1,4 +1,3 @@
-
 .Formulario {
   display: flex;
   align-items: stretch;
@@ -7,14 +6,25 @@
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+
   .inputContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 1rem; 
-    grid-template-areas: 
-      ". ."; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      ". .";
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "."
+        "."
+      ;
+    }
   }
+
   .input {
     margin: 8px 0;
     box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
@@ -40,9 +50,11 @@
     position: relative;
     vertical-align: top;
   }
+
   .titulo {
     margin-top: 0;
   }
+
   .botao {
     padding: 12px 24px;
     background: #95bae8;
@@ -52,6 +64,7 @@
     margin: 8px 0;
     cursor: pointer;
   }
+
   .botao:hover {
     background: #e4bbff8f;
     border-color: #95bae8;
