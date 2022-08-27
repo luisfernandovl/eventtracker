@@ -45,6 +45,10 @@
     padding-top: calc(0.5em - 1px);
     position: relative;
     vertical-align: top;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
 
   .titulo {
